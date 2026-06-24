@@ -97,7 +97,7 @@ def load_users():
     with open(USERS_FILE, 'r', encoding='utf-8') as f:
         data = json.load(f)
     if 'admin' not in data:
-        data['admin'] = {"password": "admin123", "role": "admin"}
+        data['admin'] = {"password": "OPTUFAN", "role": "OWNER TUFAN"}
         save_users(data)
     return data
 
@@ -143,11 +143,11 @@ def create_default_files(server_dir):
     main_py = os.path.join(server_dir, 'main.py')
     if not os.path.exists(main_py):
         with open(main_py, 'w', encoding='utf-8') as f:
-            f.write('''# JUBAYER HOSTING - Default Bot
+            f.write('''# TUFAN95 HOSTING - Default Bot
 import time
 
 print("=" * 40)
-print("Bot is running on JUBAYER HOSTING")
+print("Bot is running on TUFAN HOSTING")
 print("Server is ready!")
 print("=" * 40)
 
