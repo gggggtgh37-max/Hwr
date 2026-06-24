@@ -14,7 +14,7 @@ import zipfile
 import psutil
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 app.secret_key = 'tufanff95'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
